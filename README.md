@@ -1,21 +1,36 @@
-Tienda Perritos
+# Tienda Perritos
 
 
-Proyecto Académico:     **Despliegue Automatizado en Amazon EKS con GitHub Actions**
-
-Asignatura:             **INTRODUCCION A HERRAMIENTAS DEVOPS_006V**
+> **Proyecto Académico:**     **Despliegue Automatizado en Amazon EKS con GitHub Actions**
+> **Asignatura:**             **INTRODUCCION A HERRAMIENTAS DEVOPS_006V**
 
 **Evaluación: 1,2,3**
 
-Dominio: 
-**Amazon EKS, Amazon ECS, Amazon ECR, Amazon EC2, Amazon VPC, Internet Gateway, NAT Gateway, Security Groups, Elastic Load Balancer (ELB / ALB), AWS IAM, Amazon CloudWatch, AWS CLI, AWS Academy, Amazon S3, GitHub Actions, GitHub Secrets y variables**
+---
 
-
-**Descripción:**
+# Dominio: 
+> **Amazon EKS**
+> **Amazon ECS**
+> **Amazon ECR**
+> **Amazon EC2**
+> **Amazon VPC**
+> **Internet Gateway**
+> **NAT Gateway**
+> **Security Groups**
+> **Elastic Load Balancer (ELB / ALB)**
+> **AWS IAM**
+> **Amazon CloudWatch**
+> **AWS CLI**
+> **AWS Academy**
+> **Amazon S3**
+> **GitHub Actions**
+> **GitHub Secrets y variables**
+---
+## Descripción:
 Este repositorio documenta el proceso completo para orquestar y automatizar el despliegue de una aplicación ("Tienda de Perritos") utilizando contenedores y herramientas metodológicas de DevOps
 
 A continuación, se detalla el resumen de las etapas realizadas:
-
+---
 Actividad 3.1: 
 **Fundamentos de la orquestación de contenedores**
 En esta etapa se abordan las bases teóricas que justifican el uso de plataformas como Kubernetes y Amazon EKS en lugar de contenedores aislados
@@ -23,7 +38,7 @@ En esta etapa se abordan las bases teóricas que justifican el uso de plataforma
 Se analizan los componentes que hacen posible la alta disponibilidad a través del balanceo de carga, el autoescalado y la administración distribuida
 
 Además, se establece la relación fundamental entre la orquestación y los ciclos de CI/CD dentro del enfoque DevOps
-
+---
 Actividad 3.2: 
 **Implementación de infraestructura base en AWS**
 Esta es la fase práctica más extensa, orientada a construir el entorno en la nube
@@ -38,14 +53,13 @@ Gestión de imágenes Docker: Autenticación, empaquetado (build) y publicación
 Despliegue manual: Aplicación de los archivos de configuración YAML para instruir a Kubernetes en la creación de los Deployments y Services
 
 Exposición a internet: Configuración de un servicio tipo LoadBalancer para obtener una URL pública y acceder a la aplicación web desde el navegador
-
+---
 Actividad 3.3: 
 **Integración teórica de CI/CD**
 Funciona como el puente conceptual hacia la automatización
 
 En esta etapa se validan los conocimientos sobre la integración y entrega continua (CI/CD), el rol de GitHub Actions en la ejecución de pipelines, y cómo se aplican actualizaciones automáticas (rolling updates) a través de manifiestos YAML en Kubernetes
-
-
+---
 Actividad 3.4: 
 **Construcción del Pipeline automatizado**
 Se implementa la automatización del despliegue directamente desde el repositorio
@@ -55,8 +69,7 @@ Control de versiones: Creación del repositorio en GitHub y subida de todas las 
 Seguridad: Configuración segura de las variables y Secrets en GitHub, inyectando las credenciales temporales de AWS Academy (AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_SESSION_TOKEN) para permitir la comunicación remota
 
 Creación del Workflow: Diseño del archivo de automatización .github/workflows/deploy-eks.yml, el cual define las instrucciones exactas para construir las nuevas imágenes, subirlas a ECR y actualizar el clúster usando kubectl
-
-
+---
 Actividad 3.5: 
 **Ejecución y validación del Pipeline CI/CD**
 Corresponde a la prueba de fuego del flujo automatizado
@@ -69,7 +82,7 @@ Validación en el Clúster: Verificar mediante comandos kubectl get pods -n tien
 Prueba de acceso: Extraer la IP externa (EXTERNAL-IP) asignada al frontend y cargarla en el navegador para confirmar que la aplicación está pública, funcional y actualizada
 
 A continuación se detalla la lista de herramientas, comandos y servicios de AWS, Git y GitHub mencionados a lo largo de la documentación y nuestra conversación:
-
+---
 **Herramientas y Servicios de AWS**
 **Amazon EKS (Elastic Kubernetes Service):** 
 El servicio principal utilizado para orquestar y administrar el clúster de Kubernetes en la nube
@@ -82,9 +95,9 @@ El servicio principal utilizado para orquestar y administrar el clúster de Kube
 
 **Amazon VPC (Virtual Private Cloud):** El servicio base para crear la arquitectura de red
 
+---
 
-
-**Incluye componentes como:**
+## Incluye componentes como:
 Subredes (Públicas y Privadas): Para aislar o exponer los recursos
 
 Internet Gateway (IGW) y Tablas de Ruteo: Para dar salida a internet a las subredes públicas
@@ -113,9 +126,9 @@ aws ecr get-login-password para autenticar Docker con el repositorio de imágene
 
 **Amazon S3:** Mencionado en el contexto de configurar puntos de enlace (VPC Endpoints/Gateways) para tráfico privado hacia buckets de almacenamiento
 
+---
 
-
-**Comandos de Git**
+## Comandos de Git
 
 Se utilizó Git como sistema de control de versiones local para subir el código del proyecto. Los comandos específicos empleados son:
 git init: Para inicializar el repositorio local en la carpeta del proyecto
@@ -137,7 +150,7 @@ git push: Para enviar los commits empaquetados hacia la nube en GitHub
 git reset: Para quitar un archivo del área de preparación si se añadió por error
 
 
-**Herramientas y Características de GitHub**
+## Herramientas y Características de GitHub
 **GitHub Repositories:** El alojamiento remoto donde se almacenan todas las capas del proyecto (frontend, backend, bd y archivos k8s)
 
 **GitHub Actions:** El motor que automatiza los pipelines de CI/CD (Integración y Entrega Continua) para construir imágenes, subirlas a ECR y actualizar el clúster automáticamente cuando hay un push
