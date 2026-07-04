@@ -1,30 +1,30 @@
 # Tienda Perritos
 
+> **Proyecto Académico:** Despliegue Automatizado en Amazon EKS con GitHub Actions  
+> **Asignatura:**  INTRODUCCION A HERRAMIENTAS DEVOPS_006V  
 
-> **Proyecto Académico:** Despliegue Automatizado en Amazon EKS con GitHub Actions
-> **Asignatura:**  INTRODUCCION A HERRAMIENTAS DEVOPS_006V
-
-**Evaluaciónes: 1,2,3**
-
+**Evaluaciónes: 1,2,3**  
 ---
+## Dominio: 
 
-# Dominio: 
-> 1.Amazon EKS
-> 2.Amazon ECS
-> 3.Amazon ECR
-> 4.Amazon EC2
-> 5.Amazon VPC
-> 6.Internet Gateway
-> 7.NAT Gateway
-> 8.Security Groups
-> 9.Elastic Load Balancer (ELB / ALB)
-> 10.AWS IAM
-> 11.Amazon CloudWatch
-> 12.AWS CLI
-> 13.AWS Academy
-> 14.Amazon S3
-> 15.GitHub Actions
-> 16.GitHub Secrets y variables
+1. Amazon EKS  
+2. Amazon ECS  
+3. Amazon ECR  
+4. Amazon EC2  
+5. Amazon VPC  
+6. Internet Gateway  
+7. NAT Gateway  
+8. Security Groups  
+9. Elastic Load Balancer (ELB / ALB)  
+10. AWS IAM  
+11. Amazon CloudWatch  
+12. AWS CLI  
+13. AWS Academy  
+14. Amazon S3  
+15. GitHub Actions  
+16. GitHub Secrets y variables  
+
+
 ---
 ## Descripción:
 Este repositorio documenta el proceso completo para orquestar y automatizar el despliegue de una aplicación ("Tienda de Perritos") utilizando contenedores y herramientas metodológicas de DevOps
@@ -158,5 +158,5 @@ git reset: Para quitar un archivo del área de preparación si se añadió por e
 **GitHub Secrets y variables:** La funcionalidad de seguridad (en Settings > Secrets and variables > Actions) usada para almacenar las claves de acceso de AWS (AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_SESSION_TOKEN y AWS_REGION), permitiendo que el pipeline interactúe con AWS de forma segura y oculta
 
 
-RGS
+## RGS
 -.-
