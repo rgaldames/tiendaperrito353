@@ -1,30 +1,30 @@
 # Tienda Perritos
 
 
-> **Proyecto Académico:**     **Despliegue Automatizado en Amazon EKS con GitHub Actions**
-> **Asignatura:**             **INTRODUCCION A HERRAMIENTAS DEVOPS_006V**
+> **Proyecto Académico:** Despliegue Automatizado en Amazon EKS con GitHub Actions
+> **Asignatura:**  INTRODUCCION A HERRAMIENTAS DEVOPS_006V
 
-**Evaluación: 1,2,3**
+**Evaluaciónes: 1,2,3**
 
 ---
 
 # Dominio: 
-> **Amazon EKS**
-> **Amazon ECS**
-> **Amazon ECR**
-> **Amazon EC2**
-> **Amazon VPC**
-> **Internet Gateway**
-> **NAT Gateway**
-> **Security Groups**
-> **Elastic Load Balancer (ELB / ALB)**
-> **AWS IAM**
-> **Amazon CloudWatch**
-> **AWS CLI**
-> **AWS Academy**
-> **Amazon S3**
-> **GitHub Actions**
-> **GitHub Secrets y variables**
+> 1.Amazon EKS
+> 2.Amazon ECS
+> 3.Amazon ECR
+> 4.Amazon EC2
+> 5.Amazon VPC
+> 6.Internet Gateway
+> 7.NAT Gateway
+> 8.Security Groups
+> 9.Elastic Load Balancer (ELB / ALB)
+> 10.AWS IAM
+> 11.Amazon CloudWatch
+> 12.AWS CLI
+> 13.AWS Academy
+> 14.Amazon S3
+> 15.GitHub Actions
+> 16.GitHub Secrets y variables
 ---
 ## Descripción:
 Este repositorio documenta el proceso completo para orquestar y automatizar el despliegue de una aplicación ("Tienda de Perritos") utilizando contenedores y herramientas metodológicas de DevOps
