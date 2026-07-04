@@ -1,8 +1,9 @@
-#Tienda Perritos
+Tienda Perritos
 
 
-##Proyecto Académico: **Despliegue Automatizado en Amazon EKS con GitHub Actions**
-##Asignatura: **INTRODUCCION A HERRAMIENTAS DEVOPS_006V**
+Proyecto Académico:     **Despliegue Automatizado en Amazon EKS con GitHub Actions**
+
+Asignatura:             **INTRODUCCION A HERRAMIENTAS DEVOPS_006V**
 
 **Evaluación: 1,2,3**
 
